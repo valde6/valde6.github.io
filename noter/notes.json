@@ -91,5 +91,21 @@
         "date": "2026-03-02",
         "path": "/noter/programmering/programmering-L15-2026-03-02-er-model.html",
         "excerpt": "E/R-modellens komponenter, nøgler og multiplicitet."
+    },
+    {
+        "id": "organisation-L01-maal-og-strategi",
+        "title": "Mål og strategi i organisationer",
+        "subject": "organisation",
+        "lektion": "L01",
+        "tags": [
+            "Målhierarki",
+            "Strategi",
+            "SWOT",
+            "Blue Ocean",
+            "Effektivitet"
+        ],
+        "date": "2025-09-01",
+        "path": "/noter/organisation/organisation-L01-2025-09-01-maal-og-strategi.html",
+        "excerpt": "Målhierarki, strategiperspektiver, SWOT, Blue Ocean og effektivitetsmåling."
     }
 ]
