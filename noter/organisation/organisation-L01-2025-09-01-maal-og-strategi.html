@@ -1,1 +1,504 @@
+<!DOCTYPE html>
+<html lang="da">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mål og strategi i organisationer — Pensummit</title>
+    <meta name="description" content="Målhierarki, strategiperspektiver, SWOT, Blue Ocean og effektivitetsmåling." />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>" />
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+</head>
+
+<body data-fag="organisation">
+
+    <header>
+        <a class="logo" href="/">Pensum<span>mit</span></a>
+        <nav>
+            <a href="/#it-projektledelse">IT-Projektledelse</a>
+            <a href="/#programmering">Programmering</a>
+            <a href="/#organisation">Organisation</a>
+            <a href="/#oekonomi">Økonomi</a>
+        </nav>
+    </header>
+
+    <div class="note-page">
+
+        <nav class="note-nav">
+            <a href="#" class="disabled">← Forrige lektion</a>
+            <a href="/">🏠 Oversigt</a>
+            <a href="#" class="disabled">Lektion 02 →</a>
+        </nav>
+
+        <header class="note-header">
+            <h1>Mål og strategi i organisationer</h1>
+            <p class="note-meta">Organisationslære · 1. september 2025 · Stig Nyman</p>
+            <div class="tags">
+                <span class="tag">Målhierarki</span>
+                <span class="tag">Strategi</span>
+                <span class="tag">SWOT</span>
+                <span class="tag">Blue Ocean</span>
+                <span class="tag">Golden Circle</span>
+                <span class="tag">Five Forces</span>
+                <span class="tag">Effektivitet</span>
+                <span class="tag">Målforskydning</span>
+            </div>
+            <p class="timestamp">Genereret 30. marts 2026</p>
+        </header>
+
+        <!-- OPSUMMERING -->
+        <h2>📋 Opsummering</h2>
+        <p>Denne lektion introducerer organisationers formelle træk med fokus på <strong>mål og strategi</strong>. En
+            organisation defineres som et socialt system, bevidst konstrueret til at løse opgaver og realisere mål. Mål
+            tjener fire formål: de motiverer medarbejdere, fungerer som styringsredskab, giver et evalueringsgrundlag og
+            legitimerer organisationens adfærd over for omgivelserne.</p>
+        <p>Lektionen skelner mellem to strategiske perspektiver: det <strong>eksterne (udefra-ind)</strong> — generiske
+            strategier baseret på markedspositionering — og det <strong>interne (indefra-ud)</strong> —
+            ressourcebaserede strategier, der bygger på unikke kompetencer. SWOT-analysen kombinerer begge. Blue
+            Ocean-strategien udfordrer klassisk konkurrencelogik ved at skabe helt nye markeder. Endelig behandles
+            målkonflikter, målforskydning og måling af effektivitet.</p>
+
+        <!-- BEGREBER -->
+        <h2>🔑 Vigtige begreber</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Begreb</th>
+                    <th>Definition</th>
+                    <th>Eksempel / kontekst</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Målhierarki</strong></td>
+                    <td>Hierarkisk struktur fra overordnet formål og vision ned til konkrete delmål.</td>
+                    <td>Formål → Vision → Hovedmål → Delmål. Opad: "Hvorfor?", nedad: "Hvordan?"</td>
+                </tr>
+                <tr>
+                    <td><strong>Generiske strategier</strong></td>
+                    <td>Porters tre positioneringsstrategier: Omkostningslederskab, Differentiering og Fokusering.</td>
+                    <td>IKEA = omkostningsleder; Apple = differentiering; nicheboutique = fokuseret differentiering.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Ressourcebaseret strategi</strong></td>
+                    <td>Konkurrencefordel opnås ved at opbygge unikke fysiske, menneskelige og organisatoriske
+                        ressourcer.</td>
+                    <td>Googles dataintelligens, Novo Nordisks patenterede forskning.</td>
+                </tr>
+                <tr>
+                    <td><strong>SWOT-analyse</strong></td>
+                    <td>Kombination af internt fokus (Strengths, Weaknesses) og eksternt fokus (Opportunities, Threats).
+                    </td>
+                    <td>Bruges til at matche interne ressourcer med markedsmuligheder.</td>
+                </tr>
+                <tr>
+                    <td><strong>Blue Ocean-strategi</strong></td>
+                    <td>Skabe et nyt marked uden konkurrenter frem for at konkurrere på et eksisterende marked.</td>
+                    <td>Cirque du Soleil kombinerede cirkus og teater og skabte en helt ny kategori.</td>
+                </tr>
+                <tr>
+                    <td><strong>Golden Circle</strong></td>
+                    <td>Simon Sineks model: WHY (kerne) → HOW → WHAT. Stærke organisationer starter med WHY.</td>
+                    <td>Apple kommunikerer fra WHY (udfordre status quo) ud til WHAT (computere).</td>
+                </tr>
+                <tr>
+                    <td><strong>Målforskydning</strong></td>
+                    <td>Det egentlige mål skubbes til side af suboptimering, regelfokusering eller overmåling.</td>
+                    <td>"Du får hvad du måler" — KPI-optimering på bekostning af det reelle formål.</td>
+                </tr>
+                <tr>
+                    <td><strong>Effektivitet</strong></td>
+                    <td>I hvilken grad en organisation når sine mål i forhold til de ressourcer, der forbruges (J&T, s.
+                        33).</td>
+                    <td>Ressourcer → Produktion → Output → Effekt → Mål. Bredere end produktivitet.</td>
+                </tr>
+                <tr>
+                    <td><strong>Produktivitet</strong></td>
+                    <td>Forholdet mellem ressourcer (input) og output (varer/ydelser) — delmål af effektivitet.</td>
+                    <td>Output pr. arbejdstime, enheder pr. råmaterialeenhed.</td>
+                </tr>
+                <tr>
+                    <td><strong>Balanced Scorecard</strong></td>
+                    <td>Redskab til at måle præstation på tværs af fire perspektiver: kunder, finans, processer og
+                        mennesker.</td>
+                    <td>Novo Nordisks BSC 2002 bruges som case i pensum.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- DIAGRAMMER -->
+        <h2>🗺️ Overblik</h2>
+
+        <div class="diagram-wrap">
+            <pre class="mermaid">
+flowchart TD
+    A["<b>Lektion 01</b><br/>Mål & Strategi"] --> B["<b>Mål</b><br/>Hierarki & dimensioner"]
+    A --> C["<b>Strategi</b><br/>To perspektiver"]
+    A --> D["<b>Måling</b><br/>Effektivitet & konflikter"]
+    B --> B1["Formål → Vision<br/>→ Hoved- → Delmål"]
+    B --> B2["Golden Circle<br/>WHY / HOW / WHAT"]
+    C --> C1["Eksternt: Generiske<br/>strategier (Porter)"]
+    C --> C2["Internt: Ressource-<br/>baseret strategi"]
+    C --> C3["SWOT & Blue Ocean"]
+    D --> D1["Målkonflikt &<br/>Målforskydning"]
+    D --> D2["Produktivitet vs.<br/>Effektivitet"]
+    style A fill:#c8502a,color:#fff,stroke:#a03d1f
+    style B fill:#fef9c3,stroke:#854d0e,color:#1a1814
+    style C fill:#dcfce7,stroke:#166534,color:#1a1814
+    style D fill:#f0e8e3,stroke:#c8502a,color:#1a1814
+      </pre>
+        </div>
+
+        <div class="diagram-wrap">
+            <pre class="mermaid">
+flowchart LR
+    MK["Marked &<br/>konkurrenter"] -->|udefra-ind| VS["Valg af marked,<br/>produkter, ydelser"]
+    VS --> ST["Struktur &<br/>systemer"]
+    ST --> RES["Unikke<br/>ressourcer"]
+    RES -->|indefra-ud| MK2["Marked &<br/>konkurrenter"]
+    GEN["<b>Generiske<br/>strategier</b>"] -.->|eksternt fokus| MK
+    RBA["<b>Ressource-<br/>baseret</b>"] -.->|internt fokus| RES
+    style GEN fill:#fef9c3,stroke:#854d0e,color:#1a1814
+    style RBA fill:#dbeafe,stroke:#1e40af,color:#1a1814
+      </pre>
+        </div>
+
+        <div class="diagram-wrap">
+            <pre class="mermaid">
+flowchart LR
+    R["<b>Ressourcer</b><br/>Arbejdskraft & kapital"] --> P["<b>Produktion</b>"] --> O["<b>Output</b><br/>Varer/ydelser"] --> E["<b>Effekt</b><br/>fx indtjening"] --> MÅL["<b>Mål</b><br/>fx afkast"]
+    R -.->|Produktivitet| O
+    R -.->|Effektivitet| MÅL
+    style R fill:#f0e8e3,stroke:#c8502a,color:#1a1814
+    style MÅL fill:#c8502a,color:#fff,stroke:#a03d1f
+      </pre>
+        </div>
+
+        <!-- EKSAMENSBOKS -->
+        <div class="exam-box">
+            <h2>🎯 Til eksamen</h2>
+            <ul>
+                <li><strong>Målhierarki:</strong> Kend de fire niveauer (formål, vision, hovedmål, delmål) og retningen:
+                    opad = "Hvorfor?", nedad = "Hvordan?"</li>
+                <li><strong>Fire formål med mål:</strong> Motiverende, styrings-, evaluerings- og
+                    legitimeringsfunktionen.</li>
+                <li><strong>Generiske strategier:</strong> Omkostningsleder, differentiering og fokusering — hvornår
+                    vælger man hvad?</li>
+                <li><strong>Udefra-ind vs. indefra-ud:</strong> Forstå forskellen og giv eksempler på begge tilgange.
+                </li>
+                <li><strong>Tre ressourcetyper:</strong> Fysiske, menneskelige og organisatoriske ressourcer.</li>
+                <li><strong>SWOT:</strong> Hvad de fire felter dækker, og at det kombinerer internt + eksternt fokus.
+                </li>
+                <li><strong>Blue Ocean vs. Red Ocean:</strong> "Gøre konkurrence irrelevant" vs. "slå konkurrenterne".
+                </li>
+                <li><strong>Målforskydning:</strong> Suboptimering, regelfokusering og overmåling — kend alle tre med
+                    eksempler.</li>
+                <li><strong>Produktivitet vs. effektivitet:</strong> Produktivitet = ressourcer → output; effektivitet =
+                    ressourcer → mål.</li>
+            </ul>
+        </div>
+
+        <!-- FORMELSAMLING -->
+        <details>
+            <summary>📐 Nøglemodeller og definitioner</summary>
+            <div class="formula-box">
+                <p><strong>Effektivitetsdefinition (J&T, s. 33)</strong></p>
+                <div class="formula">Effektivitet = i hvor høj grad organisationen når sine mål med et givet forbrug af
+                    ressourcer</div>
+
+                <p><strong>Produktivitet</strong></p>
+                <div class="formula">Produktivitet = Output / Input (ressourcer → varer/ydelser)</div>
+
+                <p><strong>Målhierarki</strong></p>
+                <div class="formula">Formål → Vision → Hovedmål → Delmål
+                    ↑ Hvorfor? ↓ Hvordan?</div>
+
+                <p><strong>Porters generiske strategier (2×2)</strong></p>
+                <div class="formula"> Lave omk. Unikt produkt
+                    Bred målgruppe: Omkostningsleder Differentiering
+                    Smal målgruppe: Omk.fokus Fokuseret diff.</div>
+
+                <p><strong>Golden Circle (Sinek)</strong></p>
+                <div class="formula">WHY (kernen) → HOW → WHAT (ydersiden)
+                    Meget få organisationer kender deres WHY.</div>
+            </div>
+        </details>
+
+        <!-- UDDYBNING -->
+        <h2>📖 Uddybning</h2>
+
+        <details class="uddybning-item">
+            <summary>Målhierarki og dimensioner ved mål</summary>
+            <div class="content">
+                <p>En organisation er ifølge Jacobsen & Thorsvik et <em>"socialt system, bevidst konstrueret med det
+                        formål at løse særlige opgaver og realisere bestemte mål"</em>. Mål opstilles for at svare på:
+                    Hvilke opgaver? Hvad ønsker vi at opnå? Og hvordan?</p>
+                <p>Mål har fire dimensioner:</p>
+                <ul>
+                    <li><strong>Tidshorisont:</strong> Kortsigtede (defineret slutmål) vs. langsigtede (kontinuerlige)
+                        mål</li>
+                    <li><strong>Kontinuitet:</strong> Defineret slutmål (projekter) vs. løbende mål (drift)</li>
+                    <li><strong>Mål-middel-sammenhæng:</strong> Klar sammenhæng giver god styring; uklar giver
+                        frustration</li>
+                    <li><strong>Realitet:</strong> Reelle mål (styrer faktisk adfærd) vs. symbolske mål (legitimering
+                        udadtil)</li>
+                </ul>
+                <p><strong>Golden Circle</strong> er Simon Sineks alternativ. De fleste kommunikerer WHAT → HOW → WHY.
+                    Stærke organisationer starter med WHY — hvad er vores formål og overbevisning? WHY er ikke profit;
+                    det er grunden til at organisationen eksisterer.</p>
+            </div>
+        </details>
+
+        <details class="uddybning-item">
+            <summary>Generiske strategier og Porter's Five Forces</summary>
+            <div class="content">
+                <p>Udgangspunktet for strategi er at forstå konkurrencesituationen. Porter's Five Forces beskriver de
+                    fem kræfter der påvirker branchen:</p>
+                <ul>
+                    <li>Truslen fra nye konkurrenter</li>
+                    <li>Truslen fra substituerende produkter</li>
+                    <li>Leverandørernes forhandlingskraft</li>
+                    <li>Kundernes forhandlingskraft</li>
+                    <li>Konkurrencen i branchen</li>
+                </ul>
+                <p>På baggrund heraf vælges én generisk strategi: <strong>Omkostningslederskab</strong> (lavest mulig
+                    pris, bred målgruppe), <strong>Differentiering</strong> (unik via service/design, bred målgruppe)
+                    eller <strong>Fokusering</strong> (smalt segment, enten pris eller differentiering).</p>
+                <p>Disse er <em>eksternt fokuserede</em> — man starter med markedet og tilpasser organisationen derfra.
+                </p>
+            </div>
+        </details>
+
+        <details class="uddybning-item">
+            <summary>Blue Ocean-strategi og digital strategi</summary>
+            <div class="content">
+                <p><strong>Red Ocean</strong>: eksisterende markeder med hård konkurrence om den samme efterspørgsel.
+                    <strong>Blue Ocean</strong>: skabe et nyt marked uden konkurrenter — gøre konkurrence irrelevant
+                    frem for at slå konkurrenterne, skabe og opfange nye behov, og levere <em>både</em> bedre
+                    <em>og</em> billigere.</p>
+                <p><strong>Digital strategi</strong> (McAfee & Brynjolfsson, 2017) handler om at navigere skiftet fra
+                    menneskelig intelligens → maskine, produkter → platforme, og kerneorganisation → crowd.</p>
+                <p>Vedtagne vs. fremvoksende strategier: den <em>intenderede strategi</em> er den planlagte. Noget
+                    realiseres (formel strategi), noget ikke. <em>Fremvoksende strategier</em> opstår undervejs som
+                    uplanlagte reaktioner på omgivelserne.</p>
+            </div>
+        </details>
+
+        <details class="uddybning-item">
+            <summary>Målkonflikter, målforskydning og effektivitetsmåling</summary>
+            <div class="content">
+                <p><strong>Målkonflikt</strong> opstår når aktører har modstridende interesser — fx ejere vs.
+                    medarbejdere, eller uenighed om vejen til målet.</p>
+                <p><strong>Målforskydning</strong> er når det egentlige mål skubbes til side:</p>
+                <ul>
+                    <li><strong>Suboptimering:</strong> Afdelinger optimerer egne mål på bekostning af helhedsmålet
+                        (silotænkning)</li>
+                    <li><strong>Overdreven regelfokusering:</strong> Bureaukratiet bliver et mål i sig selv og hæmmer
+                        organisationen</li>
+                    <li><strong>Overmåling:</strong> "Du får hvad du måler" — medarbejdere fokuserer kun på hvad der
+                        tæller i KPI'er</li>
+                </ul>
+                <p><strong>Balanced Scorecard</strong> er et svar på overmåling: det måler præstation på fire
+                    perspektiver samtidig — Kunder & samfund, Finans, Forretningsprocesser og Mennesker & organisation.
+                    Novo Nordisks BSC fra 2002 er case i pensum.</p>
+            </div>
+        </details>
+
+        <!-- QUIZ -->
+        <h2>🧠 Quiz</h2>
+        <p class="score-display" id="score-display">Score: 0 / 10</p>
+
+        <div class="quiz-question" id="q1">
+            <p>1. Hvad er den korrekte rækkefølge i et målhierarki (fra øverst til nederst)?</p>
+            <button class="quiz-btn" onclick="answer(this,'q1',false)">Vision → Formål → Delmål → Hovedmål</button>
+            <button class="quiz-btn" onclick="answer(this,'q1',true)">Formål → Vision → Hovedmål → Delmål</button>
+            <button class="quiz-btn" onclick="answer(this,'q1',false)">Delmål → Hovedmål → Vision → Formål</button>
+            <button class="quiz-btn" onclick="answer(this,'q1',false)">Formål → Delmål → Hovedmål → Vision</button>
+        </div>
+
+        <div class="quiz-question" id="q2">
+            <p>2. Hvilke fire formål tjener organisationers mål ifølge Jacobsen & Thorsvik?</p>
+            <button class="quiz-btn" onclick="answer(this,'q2',false)">Profit, vækst, stabilitet og overlevelse</button>
+            <button class="quiz-btn" onclick="answer(this,'q2',true)">Motivering, styring, evaluering og
+                legitimering</button>
+            <button class="quiz-btn" onclick="answer(this,'q2',false)">Planlægning, organisering, ledelse og
+                kontrol</button>
+            <button class="quiz-btn" onclick="answer(this,'q2',false)">Effektivitet, produktivitet, kvalitet og
+                innovation</button>
+        </div>
+
+        <div class="quiz-question" id="q3">
+            <p>3. Hvad er kernen i Simon Sineks 'Golden Circle'?</p>
+            <button class="quiz-btn" onclick="answer(this,'q3',false)">WHAT er vigtigst, fordi kunder køber
+                produkter</button>
+            <button class="quiz-btn" onclick="answer(this,'q3',false)">HOW er vigtigst, fordi det differentierer
+                virksomheden</button>
+            <button class="quiz-btn" onclick="answer(this,'q3',true)">WHY er vigtigst — meget få organisationer kender
+                det egentlig</button>
+            <button class="quiz-btn" onclick="answer(this,'q3',false)">Alle tre lag er lige vigtige og kommunikeres
+                simultant</button>
+        </div>
+
+        <div class="quiz-question" id="q4">
+            <p>4. Hvad kendetegner en generisk 'differentieringsstrategi' (Porter)?</p>
+            <button class="quiz-btn" onclick="answer(this,'q4',false)">Producere til lavest mulig pris på et bredt
+                marked</button>
+            <button class="quiz-btn" onclick="answer(this,'q4',false)">Fokusere på et smalt segment med lave
+                omkostninger</button>
+            <button class="quiz-btn" onclick="answer(this,'q4',true)">Være unik i branchen via særlig service eller
+                design</button>
+            <button class="quiz-btn" onclick="answer(this,'q4',false)">Skabe et helt nyt marked uden
+                konkurrenter</button>
+        </div>
+
+        <div class="quiz-question" id="q5">
+            <p>5. Hvad er den grundlæggende forskel på ekstern og intern strategi?</p>
+            <button class="quiz-btn" onclick="answer(this,'q5',true)">Generisk starter med markedet; ressourcebaseret
+                starter med interne styrker</button>
+            <button class="quiz-btn" onclick="answer(this,'q5',false)">Generisk er billigere at implementere end
+                ressourcebaseret</button>
+            <button class="quiz-btn" onclick="answer(this,'q5',false)">Ressourcebaseret strategi ignorerer konkurrenter
+                helt</button>
+            <button class="quiz-btn" onclick="answer(this,'q5',false)">Generisk strategi er kun relevant for store
+                virksomheder</button>
+        </div>
+
+        <div class="quiz-question" id="q6">
+            <p>6. Hvad adskiller Blue Ocean- fra Red Ocean-strategi?</p>
+            <button class="quiz-btn" onclick="answer(this,'q6',false)">Blue Ocean fokuserer på at slå konkurrenterne på
+                pris</button>
+            <button class="quiz-btn" onclick="answer(this,'q6',true)">Blue Ocean skaber et nyt marked og gør konkurrence
+                irrelevant</button>
+            <button class="quiz-btn" onclick="answer(this,'q6',false)">Red Ocean handler om digitale platforme</button>
+            <button class="quiz-btn" onclick="answer(this,'q6',false)">Blue Ocean er kun relevant for startups</button>
+        </div>
+
+        <div class="quiz-question" id="q7">
+            <p>7. Hvad er 'målforskydning'?</p>
+            <button class="quiz-btn" onclick="answer(this,'q7',false)">At flytte tidshorisonten for organisationens mål
+                frem</button>
+            <button class="quiz-btn" onclick="answer(this,'q7',true)">At det egentlige mål skubbes til side af fx
+                suboptimering eller overmåling</button>
+            <button class="quiz-btn" onclick="answer(this,'q7',false)">At skifte fra kortsigtede til langsigtede
+                mål</button>
+            <button class="quiz-btn" onclick="answer(this,'q7',false)">At tilpasse mål til nye markedsforhold</button>
+        </div>
+
+        <div class="quiz-question" id="q8">
+            <p>8. Hvad måler 'produktivitet' i J&T's effektivitetsmodel?</p>
+            <button class="quiz-btn" onclick="answer(this,'q8',false)">Forholdet mellem ressourcer og det overordnede
+                mål</button>
+            <button class="quiz-btn" onclick="answer(this,'q8',true)">Forholdet mellem ressourcer og output
+                (varer/ydelser)</button>
+            <button class="quiz-btn" onclick="answer(this,'q8',false)">Graden af medarbejdertilfredshed</button>
+            <button class="quiz-btn" onclick="answer(this,'q8',false)">Effekten af produktion målt i
+                markedsandel</button>
+        </div>
+
+        <div class="quiz-question" id="q9">
+            <p>9. Hvad er de tre typer ressourcer i den ressourcebaserede strategi?</p>
+            <button class="quiz-btn" onclick="answer(this,'q9',false)">Finansielle, teknologiske og
+                menneskelige</button>
+            <button class="quiz-btn" onclick="answer(this,'q9',true)">Fysiske, menneskelige og organisatoriske</button>
+            <button class="quiz-btn" onclick="answer(this,'q9',false)">Materielle, immaterielle og finansielle</button>
+            <button class="quiz-btn" onclick="answer(this,'q9',false)">Strategiske, taktiske og operationelle</button>
+        </div>
+
+        <div class="quiz-question" id="q10">
+            <p>10. Hvad viser Porter's Five Forces-model?</p>
+            <button class="quiz-btn" onclick="answer(this,'q10',false)">De fem trin i en strategisk
+                planlægningsproces</button>
+            <button class="quiz-btn" onclick="answer(this,'q10',true)">De fem konkurrencekræfter der former en branches
+                attraktivitet</button>
+            <button class="quiz-btn" onclick="answer(this,'q10',false)">De fem niveauer i et
+                organisationshierarki</button>
+            <button class="quiz-btn" onclick="answer(this,'q10',false)">De fem dimensioner ved organisationsmål</button>
+        </div>
+
+        <button class="restart-btn" onclick="restartQuiz()">↺ Start forfra</button>
+
+        <!-- MINE NOTER -->
+        <h2>📝 Mine noter</h2>
+        <textarea placeholder="Skriv dine egne noter her…"></textarea>
+
+        <!-- KILDER -->
+        <h2>📚 Kilder og pensum</h2>
+        <ul class="sources">
+            <li>Jacobsen, D.I. & Thorsvik, J. (2022). <em>Hvordan organisationer fungerer</em>. Hans Reitzels Forlag, 4.
+                udgave, København. (Kap. 2)</li>
+            <li>Sinek, S. <em>Start with Why</em>. TEDx Talks — youtube.com/watch?v=u4ZoJKF_VuA</li>
+            <li>McAfee, A. & Brynjolfsson, E. (2017). <em>Machine, Platform, Crowd</em>. WW Norton & Company.</li>
+            <li>Zingales, F.G. & Hockerts, K. (2003). Balanced scorecard and sustainability. Insead.</li>
+            <li>Morsing, M., Oswald, D., Stormer, S. (2019). Novo Nordisk case. Springer.</li>
+            <li>Forelæsningsslides: <em>Mål og strategi i organisationer (1) & (2)</em>, Stig Nyman, CBS.</li>
+        </ul>
+
+        <nav class="note-nav" style="margin-top:3rem">
+            <a href="#" class="disabled">← Forrige lektion</a>
+            <a href="/">🏠 Oversigt</a>
+            <a href="#" class="disabled">Lektion 02 →</a>
+        </nav>
+
+    </div>
+
+    <footer>
+        Pensummit &mdash; HA(it), CBS · <span id="year"></span>
+    </footer>
+
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            themeVariables: {
+                fontSize: '15px',
+                fontFamily: 'DM Sans, sans-serif',
+                primaryColor: '#fef9c3',
+                primaryBorderColor: '#c8502a',
+                primaryTextColor: '#1a1814',
+                lineColor: '#c8502a',
+                background: '#ffffff',
+                mainBkg: '#ffffff',
+                nodeBorder: '#c8502a',
+                clusterBkg: '#f7f4ef',
+                titleColor: '#1a1814',
+                edgeLabelBackground: '#ffffff',
+            }
+        });
+
+        let score = 0;
+        const total = document.querySelectorAll('.quiz-question').length;
+
+        function answer(btn, qId, isCorrect) {
+            const q = document.getElementById(qId);
+            if (q.dataset.done) return;
+            q.dataset.done = '1';
+            q.querySelectorAll('.quiz-btn').forEach(b => {
+                b.disabled = true;
+                if (b.onclick.toString().includes('true')) b.classList.add('correct');
+            });
+            if (!isCorrect) btn.classList.add('wrong');
+            else score++;
+            document.getElementById('score-display').textContent = `Score: ${score} / ${total}`;
+        }
+
+        function restartQuiz() {
+            score = 0;
+            document.querySelectorAll('.quiz-question').forEach(q => {
+                delete q.dataset.done;
+                q.querySelectorAll('.quiz-btn').forEach(b => {
+                    b.disabled = false;
+                    b.classList.remove('correct', 'wrong');
+                });
+            });
+            document.getElementById('score-display').textContent = `Score: 0 / ${total}`;
+        }
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
