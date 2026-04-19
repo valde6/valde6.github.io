@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Flow Statements — Pensummit</title>
+    <meta name="description" content="Pengestrømsopgørelsen, indirect method, direct method, free cash flow." />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>" />
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+</head>
+
+<body data-fag="oekonomi">
+
+    <header>
+        <a class="logo" href="/">Pensum<span>mit</span></a>
+        <nav>
+            <a href="/#it-projektledelse">IT-Projektledelse</a>
+            <a href="/#programmering">Programmering</a>
+            <a href="/#organisation">Organisation</a>
+            <a href="/#oekonomi">Økonomi</a>
+        </nav>
+    </header>
+
+    <div class="note-page">
+
+        <nav class="note-nav">
+            <a href="#" class="disabled">← Lektion 07</a>
+            <a href="/">🏠 Oversigt</a>
+            <a href="#" class="disabled">Lektion 09 →</a>
+        </nav>
+
+        <header class="note-header">
+            <h1>Cash Flow Statements</h1>
+            <p class="note-meta">Eksternt Regnskab · 24. marts 2026 · Kim M. Adamsen</p>
+            <div class="tags">
+                <span class="tag">Pengestrømsopgørelse</span>
+                <span class="tag">Indirect Method</span>
+                <span class="tag">Direct Method</span>
+                <span class="tag">Driftsaktiviteter</span>
+                <span class="tag">Investeringsaktiviteter</span>
+                <span class="tag">Finansieringsaktiviteter</span>
+                <span class="tag">Free Cash Flow</span>
+                <span class="tag">Betalingstrømsmodellen</span>
+            </div>
+            <p class="timestamp">Genereret 19. april 2026</p>
+        </header>
+
+        <!-- OPSUMMERING -->
+        <h2>📋 Opsummering</h2>
+        <p>Pengestrømsopgørelsen (Statement of Cash Flows) er et af årsrapportens tre kerneregnskaber og viser, hvordan
+            virksomheden genererer og anvender likvider i løbet af et regnskabsår. Opgørelsen er opdelt i tre
+            aktivitetstyper: drifts-, investerings- og finansieringsaktiviteter, og den bruges primært til at vurdere
+            virksomhedens betalingsevne og likviditetsudvikling.</p>
+        <p>Der findes to metoder til at opstille driftsaktiviteternes sektion: den <strong>indirekte metode
+                (beholdningsforskydningsmodellen)</strong>, der tager udgangspunkt i årets resultat og korrigerer for
+            ikke-kontante poster, og den <strong>direkte metode (betalingstrømsmodellen)</strong>, der viser de faktiske
+            ind- og udbetalinger. I Danmark er den direkte metode med momsbehandling særligt central til eksamen.
+            Endelig introduceres <strong>free cash flow</strong> som et nøgletal for virksomhedens evne til at frigøre
+            likviditet efter nødvendige investeringer.</p>
+
+        <!-- BEGREBER -->
+        <h2>🔑 Vigtige begreber</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Begreb</th>
+                    <th>Definition</th>
+                    <th>Eksempel / kontekst</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Pengestrømsopgørelse</strong></td>
+                    <td>Regnskabsopgørelse der viser tilgang og afgang af likvider fordelt på drifts-, investerings- og
+                        finansieringsaktiviteter.</td>
+                    <td>Obligatorisk del af årsrapporten jf. IAS 7 / årsregnskabsloven.</td>
+                </tr>
+                <tr>
+                    <td><strong>Driftsaktiviteter</strong></td>
+                    <td>Pengestrømme fra virksomhedens primære forretningsaktiviteter — salg og daglig drift.</td>
+                    <td>Indbetalinger fra kunder, udbetalinger til leverandører og ansatte.</td>
+                </tr>
+                <tr>
+                    <td><strong>Investeringsaktiviteter</strong></td>
+                    <td>Pengestrømme knyttet til køb og salg af langsigtede aktiver og investeringer.</td>
+                    <td>Køb af maskiner, salg af bygning, køb af kapitalandele i datterselskaber.</td>
+                </tr>
+                <tr>
+                    <td><strong>Finansieringsaktiviteter</strong></td>
+                    <td>Pengestrømme der ændrer virksomhedens kapitalstruktur — egenkapital og langfristet gæld.</td>
+                    <td>Optagelse af lån, tilbagebetaling af gæld, udbyttebetaling, aktieemission.</td>
+                </tr>
+                <tr>
+                    <td><strong>Indirekte metode</strong></td>
+                    <td>Startes med resultat efter skat og tilpasses med ikke-kontante poster (fx afskrivninger) og
+                        ændringer i arbejdskapital.</td>
+                    <td>Afskrivninger lægges tilbage da de reducerede resultatet uden at være en udbetaling.</td>
+                </tr>
+                <tr>
+                    <td><strong>Direkte metode</strong></td>
+                    <td>Viser de faktiske kontante ind- og udbetalinger fra driften direkte — indbetalinger fra kunder,
+                        udbetalinger til leverandører osv.</td>
+                    <td>Betalingstrømsmodellen inkl. momsbehandling bruges i dansk praksis.</td>
+                </tr>
+                <tr>
+                    <td><strong>Beholdningsforskydning</strong></td>
+                    <td>Ændringer i omsætningsaktiver og kortfristet gæld (arbejdskapital) der påvirker den reelle
+                        likviditet.</td>
+                    <td>Stigning i debitorer betyder at salg ikke er indbetalt → trækkes fra resultat.</td>
+                </tr>
+                <tr>
+                    <td><strong>Free Cash Flow</strong></td>
+                    <td>Likvider fra driften fratrukket planlagte investeringer i langsigtede aktiver og udbytter.</td>
+                    <td>FCF = Pengestrøm fra drift − CapEx − Udbytte. Positivt FCF = råderum til vækst.</td>
+                </tr>
+                <tr>
+                    <td><strong>Non-cash aktiviteter</strong></td>
+                    <td>Investerings- og finansieringstransaktioner der ikke involverer likvider, men oplyses i note.
+                    </td>
+                    <td>Køb af bygning ved udstedelse af aktier — ingen kontant betaling, men relevant information.</td>
+                </tr>
+                <tr>
+                    <td><strong>Afskrivninger (add-back)</strong></td>
+                    <td>Ved indirekte metode lægges afskrivninger tilbage til årets resultat, da de reducerede
+                        resultatet uden at være en kontant udbetaling.</td>
+                    <td>Afskrivning 500 t.kr. → lægges til resultat i driftsafsnittet.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- PENGESTRØMSOPGØRELSE — simpel tabel da det er kernepensum -->
+        <h2>📊 Pengestrømsopgørelse — struktur og eksempel</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Post</th>
+                    <th>Beløb (t.kr.)</th>
+                    <th>Note</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Driftsaktiviteter (indirekte metode)</strong></td>
+                    <td class="num"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Årets resultat efter skat</td>
+                    <td class="num">2.184</td>
+                    <td>Udgangspunkt</td>
+                </tr>
+                <tr>
+                    <td>+ Afskrivninger</td>
+                    <td class="num">500</td>
+                    <td>Ikke-kontant post — lægges tilbage</td>
+                </tr>
+                <tr>
+                    <td>− Stigning i debitorer</td>
+                    <td class="num">–170</td>
+                    <td>Salg ikke indbetalt endnu</td>
+                </tr>
+                <tr>
+                    <td>+ Fald i varelager</td>
+                    <td class="num">20</td>
+                    <td>Lager omsat til kontanter</td>
+                </tr>
+                <tr>
+                    <td>+ Stigning i kreditorer</td>
+                    <td class="num">400</td>
+                    <td>Køb ikke betalt endnu</td>
+                </tr>
+                <tr>
+                    <td>− Fald i skyldige omkostninger</td>
+                    <td class="num">–50</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>Pengestrøm fra drift i alt</strong></td>
+                    <td class="num"><strong>2.884</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>Investeringsaktiviteter</strong></td>
+                    <td class="num"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>− Køb af anlægsaktiver (CapEx)</td>
+                    <td class="num">–2.550</td>
+                    <td>Udvidelse af produktionskapacitet</td>
+                </tr>
+                <tr>
+                    <td>+ Salg af anlægsaktiver</td>
+                    <td class="num">500</td>
+                    <td>Bogført til salgspris</td>
+                </tr>
+                <tr>
+                    <td><strong>Pengestrøm fra investering i alt</strong></td>
+                    <td class="num"><strong>–2.050</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>Finansieringsaktiviteter</strong></td>
+                    <td class="num"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>+ Optagelse af langfristet lån</td>
+                    <td class="num">800</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>− Tilbagebetaling af lån</td>
+                    <td class="num">–200</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>− Udbyttebetaling</td>
+                    <td class="num">–150</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>Pengestrøm fra finansiering i alt</strong></td>
+                    <td class="num"><strong>450</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>Ændring i likvider (netto)</strong></td>
+                    <td class="num"><strong>1.284</strong></td>
+                    <td>Drift + Investering + Finansiering</td>
+                </tr>
+                <tr>
+                    <td>Likvider primo</td>
+                    <td class="num">420</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>Likvider ultimo</strong></td>
+                    <td class="num"><strong>1.704</strong></td>
+                    <td>Jf. balance</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- BETALINGSTRØMSMODEL (DIREKTE METODE) — foldbar -->
+        <details class="uddybning-item">
+            <summary>📊 Betalingstrømsmodellen (direkte metode) — dansk model inkl. moms</summary>
+            <div class="content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Post</th>
+                            <th>Formel / beskrivelse</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Indbetaling fra kunder</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>+ Debitorer primo inkl. moms</td>
+                            <td>Tilgodehavender der indbetales i år</td>
+                        </tr>
+                        <tr>
+                            <td>+ Årets salg inkl. moms</td>
+                            <td>Salg × 1,25</td>
+                        </tr>
+                        <tr>
+                            <td>− Debitorer ultimo inkl. moms</td>
+                            <td>Ikke indbetalt endnu</td>
+                        </tr>
+                        <tr>
+                            <td><strong>= Indbetalinger fra kunder i alt</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Udbetaling til leverandører</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>− Varekreditorer primo inkl. moms</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>− Årets varekøb (netto)</td>
+                            <td>= Varelager primo − ultimo + vareforbrug</td>
+                        </tr>
+                        <tr>
+                            <td>+ Varekreditorer ultimo inkl. moms</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>= Udbetaling til leverandører i alt</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>− Udbetaling af kontante kapacitetsomkostninger</td>
+                            <td>Løn, husleje mv. (ekskl. afskrivninger)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Betaling af moms</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>+/− Momstilgodehavende/skyldig moms primo</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>+ Opkrævet moms (25% af salg)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>− Afkrævet moms (25% af varekøb)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>+/− Momstilgodehavende/skyldig moms ultimo</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>= Betaling af moms i alt</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>= Driftens likviditetsforskydning i alt</strong></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </details>
+
+        <!-- DIAGRAMMER -->
+        <h2>🗺️ Overblik</h2>
+        <div class="diagram-wrap">
+            <pre class="mermaid">
+flowchart TD
+  A["<b>Cash Flow Statements</b><br/>Lektion 08"] --> B["<b>De tre sektioner</b>"]
+  A --> C["<b>To metoder</b><br/>for driftsaktiviteter"]
+  A --> D["<b>Free Cash Flow</b>"]
+  B --> B1["Driftsaktiviteter<br/>Primær forretning"]
+  B --> B2["Investeringsaktiviteter<br/>Langsigtede aktiver"]
+  B --> B3["Finansieringsaktiviteter<br/>Kapitalstruktur"]
+  C --> C1["Indirekte metode<br/>(Beholdningsforskydning)"]
+  C --> C2["Direkte metode<br/>(Betalingstrømsmodellen)"]
+  D --> D1["FCF = Drift<br/>− CapEx − Udbytte"]
+  style A fill:#c8502a,color:#fff,stroke:#a03d1f
+  style B fill:#fce7f3,stroke:#9d174d,color:#1a1814
+  style C fill:#fef9c3,stroke:#854d0e,color:#1a1814
+  style D fill:#dcfce7,stroke:#166534,color:#1a1814
+    </pre>
+        </div>
+
+        <div class="diagram-wrap">
+            <pre class="mermaid">
+flowchart LR
+  RES["<b>Årets resultat</b><br/>efter skat"]
+  RES -->|"+ Afskrivninger<br/>(non-cash)"| ADJ["<b>Justeret<br/>resultat</b>"]
+  ADJ -->|"+/− Arbejdskapital<br/>(debitorer, lager, kreditorer)"| DRIFT["<b>Cash fra<br/>drift</b>"]
+  DRIFT -->|"− CapEx<br/>+ salg af aktiver"| INV["<b>Cash fra<br/>investering</b>"]
+  INV -->|"+/− lån<br/>− udbytte"| FIN["<b>Cash fra<br/>finansiering</b>"]
+  FIN --> DELTA["<b>Ændring i<br/>likvider</b>"]
+  style RES fill:#f0e8e3,stroke:#c8502a,color:#1a1814
+  style DRIFT fill:#fef9c3,stroke:#854d0e,color:#1a1814
+  style DELTA fill:#c8502a,color:#fff,stroke:#a03d1f
+    </pre>
+        </div>
+
+        <div class="diagram-wrap">
+            <pre class="mermaid">
+flowchart TD
+  subgraph IND["<b>Indirekte metode</b>"]
+    I1["Start: Årets resultat"] --> I2["+ Afskrivninger"]
+    I2 --> I3["+/− Beholdningsforskydninger"]
+    I3 --> I4["= Cash fra drift"]
+  end
+  subgraph DIR["<b>Direkte metode</b>"]
+    D1["Indbetalinger fra kunder"] --> D4["= Cash fra drift"]
+    D2["− Udbetalinger til leverandører"] --> D4
+    D3["− Betaling af moms og løn"] --> D4
+  end
+  style IND fill:#dbeafe,stroke:#1e40af,color:#1a1814
+  style DIR fill:#dcfce7,stroke:#166534,color:#1a1814
+    </pre>
+        </div>
+
+        <!-- EKSAMENSBOKS -->
+        <div class="exam-box">
+            <h2>🎯 Til eksamen</h2>
+            <ul>
+                <li><strong>De tre sektioner:</strong> Kend formålet med hver — drift (primær forretning), investering
+                    (langsigtede aktiver), finansiering (kapitalstruktur). Giv eksempler på poster i hver.</li>
+                <li><strong>Indirekte metode — 5 trin:</strong> (1) Cash fra drift, (2) Cash fra investering, (3) Cash
+                    fra finansiering, (4) Beregn netto likviditetsændring, (5) Non-cash aktiviteter som særskilt note.
+                </li>
+                <li><strong>Afskrivninger lægges tilbage:</strong> Afskrivninger reducerede resultatet, men var ikke en
+                    kontant udbetaling → lægges til igen ved indirekte metode.</li>
+                <li><strong>Beholdningsforskydninger:</strong> Stigning i debitorer = minus (ikke indbetalt). Stigning i
+                    kreditorer = plus (ikke betalt endnu). Fald i lager = plus (omsat til kontanter).</li>
+                <li><strong>Direkte metode (betalingstrømsmodellen):</strong> Inkl. momsbehandling. Moms på salg (25%)
+                    opkræves og betales til SKAT — husk at skille salg og moms ad.</li>
+                <li><strong>Non-cash aktiviteter:</strong> Fremgår IKKE i selve opgørelsen, men i en separat note — fx
+                    køb af bygning via aktieudstedelse.</li>
+                <li><strong>Free Cash Flow:</strong> FCF = Cash fra drift − CapEx − Udbytte. Bruges til at vurdere om
+                    virksomheden har likviditet til nye investeringer.</li>
+                <li><strong>Kontrol:</strong> Likvider primo + netto ændring = likvider ultimo — dette skal stemme med
+                    balancen.</li>
+            </ul>
+        </div>
+
+        <!-- FORMELSAMLING -->
+        <details>
+            <summary>📐 Nøgleformler og modeller</summary>
+            <div class="formula-box">
+                <p><strong>Netto ændring i likvider</strong></p>
+                <div class="formula">Likvider ultimo = Likvider primo + Cash fra drift + Cash fra investering + Cash fra
+                    finansiering</div>
+
+                <p><strong>Free Cash Flow</strong></p>
+                <div class="formula">FCF = Pengestrøm fra driftsaktiviteter − Planlagte investeringer i langsigtede
+                    aktiver − Udbytte</div>
+
+                <p><strong>Indirekte metode — driftsaktiviteter</strong></p>
+                <div class="formula">Cash fra drift = Årets resultat
+                    + Afskrivninger (non-cash)
+                    − Stigning i debitorer (+ fald)
+                    − Stigning i varelager (+ fald)
+                    + Stigning i kreditorer (− fald)
+                    +/− andre beholdningsforskydninger</div>
+
+                <p><strong>Indbetaling fra kunder (direkte metode inkl. moms)</strong></p>
+                <div class="formula">Indbetaling fra kunder =
+                    + Debitorer primo inkl. moms
+                    + Årets salg inkl. moms (salg × 1,25)
+                    − Debitorer ultimo inkl. moms</div>
+
+                <p><strong>Betaling af moms</strong></p>
+                <div class="formula">Momsbetaling =
+                    +/− Moms tilgode/skyldig primo
+                    + Opkrævet salgsmoms (25% af salg)
+                    − Afkrævet købsmoms (25% af varekøb)
+                    +/− Moms tilgode/skyldig ultimo</div>
+
+                <p><strong>Cash received ved aktivsalg (indirekte metode)</strong></p>
+                <div class="formula">Cash received = Kostpris − Akkumulerede afskrivninger + Gevinst − Tab</div>
+            </div>
+        </details>
+
+        <!-- UDDYBNING -->
+        <h2>📖 Uddybning</h2>
+
+        <details class="uddybning-item">
+            <summary>Formålet med pengestrømsopgørelsen</summary>
+            <div class="content">
+                <p>Mens resultatopgørelsen viser virksomhedens indtjening på accrual-basis (periodiseret), viser
+                    pengestrømsopgørelsen hvornår pengene faktisk bevæger sig. En virksomhed kan have et positivt
+                    resultat men alligevel have likviditetsproblemer — fx hvis den sælger på kredit og ikke får pengene
+                    ind i tide.</p>
+                <p>Pengestrømsopgørelsen er derfor central for at vurdere:</p>
+                <ul>
+                    <li>Om virksomheden kan betale sine regninger (betalingsevne)</li>
+                    <li>Om driften genererer tilstrækkelige likvider til at finansiere investeringer</li>
+                    <li>Hvorfra likviditeten primært kommer — og om det er bæredygtigt</li>
+                </ul>
+                <p>En sund virksomhed har typisk positivt cash flow fra driften og negativt fra investering (investerer
+                    i fremtiden), finansieret af drift eller fremmedkapital.</p>
+            </div>
+        </details>
+
+        <details class="uddybning-item">
+            <summary>Indirekte metode — beholdningsforskydningsmodellen</summary>
+            <div class="content">
+                <p>Den indirekte metode starter med årets resultat og justerer det til et kontant beløb. Logikken er:
+                    resultatet er beregnet på periodiseringsbasis, men vi vil finde det kontante beløb.</p>
+                <p><strong>Justeringer for ikke-kontante poster:</strong></p>
+                <ul>
+                    <li><strong>Afskrivninger +:</strong> Reducerede resultatet, men ingen penge gik ud af kassen</li>
+                    <li><strong>Hensættelser +/−:</strong> Bogført omkostning uden kontant betaling endnu</li>
+                </ul>
+                <p><strong>Justeringer for beholdningsforskydninger (arbejdskapital):</strong></p>
+                <ul>
+                    <li><strong>Stigning i debitorer −:</strong> Salg er bogført men ikke indbetalt</li>
+                    <li><strong>Fald i debitorer +:</strong> Tidligere salg er nu indbetalt</li>
+                    <li><strong>Stigning i varelager −:</strong> Penge er bundet i lager</li>
+                    <li><strong>Stigning i kreditorer +:</strong> Indkøb er bogført men ikke betalt endnu</li>
+                </ul>
+            </div>
+        </details>
+
+        <details class="uddybning-item">
+            <summary>Direkte metode — betalingstrømsmodellen med moms</summary>
+            <div class="content">
+                <p>Den direkte metode er mere gennemsigtig fordi den viser de faktiske pengebevægelser. I Danmark er
+                    momsbehandlingen vigtig, da virksomheder opkræver moms af kunder (salgsmoms, 25%) og betaler moms
+                    til leverandører (købsmoms, 25%). Forskellen afregnes med SKAT.</p>
+                <p><strong>Indbetaling fra kunder:</strong> Start med hvad der stod til gode (debitorer primo), tilføj
+                    årets fakturerede salg inkl. moms, og fratræk hvad der stadig ikke er betalt (debitorer ultimo).</p>
+                <p><strong>Udbetaling til leverandører:</strong> Beregn årets faktiske varekøb (via lagerforskydning),
+                    korrigér for varekreditorer primo/ultimo, og inkludér moms på indkøb.</p>
+                <p><strong>Moms-sektion:</strong> Beregnes separat og afregnes med SKAT kvartalsvis. En virksomhed der
+                    sælger mere end den køber, vil have en netto momsudbetaling.</p>
+            </div>
+        </details>
+
+        <details class="uddybning-item">
+            <summary>Investeringsaktiviteter og non-cash aktiviteter</summary>
+            <div class="content">
+                <p>Investeringsafsnittet viser de kontante betalinger for langsigtede aktiver. Ved <strong>salg af et
+                        aktiv</strong> beregnes den kontante provenu som: Kostpris − akkumulerede afskrivninger +
+                    gevinst − tab.</p>
+                <p><strong>Non-cash aktiviteter</strong> er transaktioner der ændrer aktiverne eller gælden uden kontant
+                    betaling — fx køb af ejendom ved udstedelse af aktier eller konvertering af gæld til egenkapital. De
+                    vises <em>ikke</em> i selve pengestrømsopgørelsen, men beskrives i en separat note, da de er
+                    væsentlige for forståelsen af virksomhedens finansielle stilling.</p>
+                <p><strong>Finansieringsaktiviteter</strong> dækker alt der ændrer kapitalstrukturen: optagelse og
+                    tilbagebetaling af lån, udstedelse af aktier, og udbyttebetalinger.</p>
+            </div>
+        </details>
+
+        <!-- QUIZ -->
+        <h2>🧠 Quiz</h2>
+        <p class="score-display" id="score-display">Score: 0 / 10</p>
+
+        <div class="quiz-question" id="q1">
+            <p>1. Hvilke tre sektioner indgår i en pengestrømsopgørelse?</p>
+            <button class="quiz-btn" onclick="answer(this,'q1',false)">Produktion, distribution og
+                administration</button>
+            <button class="quiz-btn" onclick="answer(this,'q1',true)">Driftsaktiviteter, investeringsaktiviteter og
+                finansieringsaktiviteter</button>
+            <button class="quiz-btn" onclick="answer(this,'q1',false)">Omsætning, omkostninger og finansielle
+                poster</button>
+            <button class="quiz-btn" onclick="answer(this,'q1',false)">Aktiver, passiver og egenkapital</button>
+        </div>
+
+        <div class="quiz-question" id="q2">
+            <p>2. Hvorfor lægges afskrivninger tilbage til resultatet ved den indirekte metode?</p>
+            <button class="quiz-btn" onclick="answer(this,'q2',false)">Fordi afskrivninger ikke er en lovlig
+                omkostning</button>
+            <button class="quiz-btn" onclick="answer(this,'q2',false)">Fordi afskrivninger altid er en
+                investeringsaktivitet</button>
+            <button class="quiz-btn" onclick="answer(this,'q2',true)">Fordi afskrivninger reducerede resultatet uden at
+                være en kontant udbetaling</button>
+            <button class="quiz-btn" onclick="answer(this,'q2',false)">Fordi afskrivninger behandles som
+                finansieringsaktivitet</button>
+        </div>
+
+        <div class="quiz-question" id="q3">
+            <p>3. Hvad sker der med cash flow fra drift, hvis virksomhedens debitorer stiger i løbet af året?</p>
+            <button class="quiz-btn" onclick="answer(this,'q3',false)">Cash flow fra drift stiger, da salget er
+                øget</button>
+            <button class="quiz-btn" onclick="answer(this,'q3',true)">Cash flow fra drift reduceres, da noget salg ikke
+                er indbetalt endnu</button>
+            <button class="quiz-btn" onclick="answer(this,'q3',false)">Det har ingen effekt på
+                pengestrømsopgørelsen</button>
+            <button class="quiz-btn" onclick="answer(this,'q3',false)">Stigningen i debitorer flyttes til
+                investeringsafsnittet</button>
+        </div>
+
+        <div class="quiz-question" id="q4">
+            <p>4. Hvad er forskellen på den indirekte og den direkte metode?</p>
+            <button class="quiz-btn" onclick="answer(this,'q4',false)">Den direkte metode starter med årets resultat;
+                den indirekte med likvider</button>
+            <button class="quiz-btn" onclick="answer(this,'q4',false)">Den indirekte metode viser faktiske ind- og
+                udbetalinger</button>
+            <button class="quiz-btn" onclick="answer(this,'q4',true)">Den indirekte starter med årets resultat og
+                korrigerer; den direkte viser faktiske kontante betalinger</button>
+            <button class="quiz-btn" onclick="answer(this,'q4',false)">De to metoder giver altid forskellige
+                resultater</button>
+        </div>
+
+        <div class="quiz-question" id="q5">
+            <p>5. Hvilken post hører til under <em>finansieringsaktiviteter</em>?</p>
+            <button class="quiz-btn" onclick="answer(this,'q5',false)">Køb af nyt produktionsudstyr</button>
+            <button class="quiz-btn" onclick="answer(this,'q5',false)">Indbetaling fra kunder</button>
+            <button class="quiz-btn" onclick="answer(this,'q5',false)">Salg af et datterselskab</button>
+            <button class="quiz-btn" onclick="answer(this,'q5',true)">Udbyttebetaling til aktionærer</button>
+        </div>
+
+        <div class="quiz-question" id="q6">
+            <p>6. Hvad er "free cash flow"?</p>
+            <button class="quiz-btn" onclick="answer(this,'q6',false)">Det samlede cash flow fra alle tre
+                sektioner</button>
+            <button class="quiz-btn" onclick="answer(this,'q6',false)">Cash flow fra driften divideret med aktiver i
+                alt</button>
+            <button class="quiz-btn" onclick="answer(this,'q6',true)">Cash fra drift fratrukket planlagte investeringer
+                og udbytte</button>
+            <button class="quiz-btn" onclick="answer(this,'q6',false)">Likvider til rådighed ved årets start</button>
+        </div>
+
+        <div class="quiz-question" id="q7">
+            <p>7. Stiger varekreditorerne i løbet af året. Hvad er effekten på cash flow fra drift (indirekte metode)?
+            </p>
+            <button class="quiz-btn" onclick="answer(this,'q7',false)">Negativ effekt — der er brugt flere penge på
+                indkøb</button>
+            <button class="quiz-btn" onclick="answer(this,'q7',true)">Positiv effekt — indkøb er bogført men ikke betalt
+                endnu</button>
+            <button class="quiz-btn" onclick="answer(this,'q7',false)">Ingen effekt — kreditorer hører til under
+                finansiering</button>
+            <button class="quiz-btn" onclick="answer(this,'q7',false)">Negativ effekt — virksomhedens gæld er
+                steget</button>
+        </div>
+
+        <div class="quiz-question" id="q8">
+            <p>8. Hvordan behandles køb af en bygning ved udstedelse af aktier i pengestrømsopgørelsen?</p>
+            <button class="quiz-btn" onclick="answer(this,'q8',false)">Som en investeringsaktivitet med negativ
+                pengestrøm</button>
+            <button class="quiz-btn" onclick="answer(this,'q8',false)">Som en finansieringsaktivitet med positiv
+                pengestrøm</button>
+            <button class="quiz-btn" onclick="answer(this,'q8',true)">Det er en non-cash aktivitet og vises kun i en
+                separat note</button>
+            <button class="quiz-btn" onclick="answer(this,'q8',false)">Det medtages i driftsafsnittet som en
+                engangsomkostning</button>
+        </div>
+
+        <div class="quiz-question" id="q9">
+            <p>9. Ved betalingstrømsmodellen (direkte metode): hvad skal man huske ved beregning af indbetaling fra
+                kunder?</p>
+            <button class="quiz-btn" onclick="answer(this,'q9',false)">At trække afskrivninger fra salget</button>
+            <button class="quiz-btn" onclick="answer(this,'q9',true)">At inkludere moms (salg × 1,25) og korrigere for
+                debitorer primo og ultimo</button>
+            <button class="quiz-btn" onclick="answer(this,'q9',false)">At dele salget op i varesalg og
+                servicesalg</button>
+            <button class="quiz-btn" onclick="answer(this,'q9',false)">At lægge årets resultat til salget</button>
+        </div>
+
+        <div class="quiz-question" id="q10">
+            <p>10. Hvad kontrollerer man til sidst i pengestrømsopgørelsen?</p>
+            <button class="quiz-btn" onclick="answer(this,'q10',false)">At årets resultat stemmer med
+                resultatopgørelsen</button>
+            <button class="quiz-btn" onclick="answer(this,'q10',false)">At egenkapitalen er uændret</button>
+            <button class="quiz-btn" onclick="answer(this,'q10',true)">At likvider primo + netto ændring = likvider
+                ultimo jf. balancen</button>
+            <button class="quiz-btn" onclick="answer(this,'q10',false)">At non-cash aktiviteter summerer til
+                nul</button>
+        </div>
+
+        <button class="restart-btn" onclick="restartQuiz()">↺ Start forfra</button>
+
+        <!-- MINE NOTER -->
+        <h2>📝 Mine noter</h2>
+        <textarea placeholder="Skriv dine egne noter her…"></textarea>
+
+        <!-- KILDER -->
+        <h2>📚 Kilder og pensum</h2>
+        <ul class="sources">
+            <li>Horngren, C.T. et al. <em>Financial Accounting</em>. Pearson Education, Ltd., 2016. Kapitel 14: The
+                Statement of Cash Flows.</li>
+            <li>Forelæsningsslides: <em>Cash flow — HA-IT, Eksternt Regnskab, Forår 2026</em>. Kim M. Adamsen, Institut
+                for Regnskab, CBS.</li>
+            <li>Lektionsplan HA-IT, F26 Ver. 1 — Lektion 08, 24. marts 2026, uge 13.</li>
+        </ul>
+
+        <nav class="note-nav" style="margin-top:3rem">
+            <a href="#" class="disabled">← Lektion 07</a>
+            <a href="/">🏠 Oversigt</a>
+            <a href="#" class="disabled">Lektion 09 →</a>
+        </nav>
+
+    </div>
+
+    <footer>
+        Pensummit &mdash; HA(it), CBS · <span id="year"></span>
+    </footer>
+
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            themeVariables: {
+                fontSize: '15px',
+                fontFamily: 'DM Sans, sans-serif',
+                primaryColor: '#fef9c3',
+                primaryBorderColor: '#c8502a',
+                primaryTextColor: '#1a1814',
+                lineColor: '#c8502a',
+                background: '#ffffff',
+                mainBkg: '#ffffff',
+                nodeBorder: '#c8502a',
+                clusterBkg: '#f7f4ef',
+                titleColor: '#1a1814',
+                edgeLabelBackground: '#ffffff',
+            }
+        });
+
+        let score = 0;
+        const total = document.querySelectorAll('.quiz-question').length;
+
+        function answer(btn, qId, isCorrect) {
+            const q = document.getElementById(qId);
+            if (q.dataset.done) return;
+            q.dataset.done = '1';
+            q.querySelectorAll('.quiz-btn').forEach(b => {
+                b.disabled = true;
+                if (b.onclick.toString().includes('true')) b.classList.add('correct');
+            });
+            if (!isCorrect) btn.classList.add('wrong');
+            else score++;
+            document.getElementById('score-display').textContent = `Score: ${score} / ${total}`;
+        }
+
+        function restartQuiz() {
+            score = 0;
+            document.querySelectorAll('.quiz-question').forEach(q => {
+                delete q.dataset.done;
+                q.querySelectorAll('.quiz-btn').forEach(b => {
+                    b.disabled = false;
+                    b.classList.remove('correct', 'wrong');
+                });
+            });
+            document.getElementById('score-display').textContent = `Score: 0 / ${total}`;
+        }
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
