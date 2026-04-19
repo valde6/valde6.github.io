@@ -785,6 +785,13 @@ details[open] summary::before {
   margin: 1rem 0 2rem;
 }
 
+.note-page td.num {
+  text-align: right;
+  font-family: 'Courier New', monospace;
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+
 /* ════════════════════════════════════════════
    RESPONSIVE
    ════════════════════════════════════════════ */
