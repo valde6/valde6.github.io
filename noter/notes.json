@@ -1,5 +1,20 @@
 [
     {
+        "id": "voes-L08-cash-flow",
+        "title": "Cash Flow Statements",
+        "subject": "oekonomi",
+        "lektion": "L08",
+        "tags": [
+            "Pengestrømsopgørelse",
+            "Indirect Method",
+            "Direct Method",
+            "Free Cash Flow"
+        ],
+        "date": "2026-03-24",
+        "path": "/noter/voes/voes-L08-2026-03-24-cash-flow.html",
+        "excerpt": "Pengestrømsopgørelsens tre sektioner, beholdningsforskydningsmodellen og betalingstrømsmodellen."
+    },
+    {
         "id": "it-projektledelse-L01-intro",
         "title": "Introduktion til IT-projektledelse",
         "subject": "it-projektledelse",
